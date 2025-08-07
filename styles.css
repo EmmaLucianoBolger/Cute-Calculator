@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  background: linear-gradient(#fceabb, #f8b500);
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('teddy.jpg'); /* Replace with your preferred teddy BG */
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.calculator {
+  background: #fff6e6;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  width: 340px;
+  border: 4px solid #d8a05e;
+  position: relative;
+}
+
+.screen {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.equation {
+  font-size: 1em;
+  color: #a67c52;
+  text-align: right;
+  min-height: 1.5em;
+}
+
+.result {
+  font-size: 2.2em;
+  text-align: right;
+  color: #5c4033;
+  min-height: 2em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  background-color: #fcd5b5;
+  border: 2px solid #d8a05e;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #5c4033;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #fbc087;
+}
+
+.operator {
+  background-color: #f5b971;
+}
+
+.equal {
+  background-color: #f3956f;
+  color: white;
+}
+
+.clear {
+  grid-column: span 4;
+  background-color: #eaa673;
+  color: white;
+}
+
+/* Optional: Add a bear face icon */
+.bear-face {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+/* 🔁 RESPONSIVE DESIGN */
+@media (max-width: 500px) {
+  .calculator {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .screen {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .equation {
+    font-size: 0.9rem;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
+
+  .clear {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .bear-face {
+    font-size: 2rem;
+  }
+}
