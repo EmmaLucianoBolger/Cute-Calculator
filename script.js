@@ -28,6 +28,7 @@ buttons.forEach(button => {
     const value = button.getAttribute("data-value");
 
     boopSound.currentTime = 0;
+    boopSound.playbackRate = 1.5;
     boopSound.play();
 
     if (value === "C") {

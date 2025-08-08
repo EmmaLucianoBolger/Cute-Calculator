@@ -13,7 +13,35 @@ body {
   background-position: center;
   box-sizing: border-box;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+@keyframes teddyBounce {
+  0%   { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+  50%  { transform: scale(1.1) rotate(5deg); opacity: 1; }
+  70%  { transform: scale(0.9) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.teddy-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #a35d7d;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #ffcad4;
+  animation: teddyBounce 0.8s ease-out;
+
+  background-color: #fff8f2;   /* cream white */
+  border: 3px solid #d8a05e;   /* teddy brown border */
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* soft shadow */
+  display: inline-block;       /* so box wraps just around text */
+}
 .calculator {
   background: #fff6e6;
   padding: 20px;
@@ -121,4 +149,9 @@ body {
   .bear-face {
     font-size: 2rem;
   }
+}
+
+.teddy-title {
+  font-size: 1.8rem;
+  padding: 0.4rem 0.8rem;
 }
